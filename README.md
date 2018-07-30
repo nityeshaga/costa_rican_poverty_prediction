@@ -20,17 +20,20 @@ I also identified the types of features and cleaned up the inconsistency in data
 
 ### Preprocessing:
 
-I do 2 important things over here - 
+I do 4 important things over here - 
 
-* missing values imputation and
-* feature engineering
+* missing values imputation
+* generating ordinal features from dummy features
+* removing redundant features
+* creating new household-wide features
 
 ### Modelling:
 
-This is where I created a train, test and validate split of the dataset.
+I try Random Forest along with 2 gradient boosting machines - LightGBM and XGBoost.
 
-Then I trained various models, out of the box, on the train data and compared their F1 macro score on the validation data.
-Using the conclusions drawn from their, I decided on the best models and tuned the hyperparameters.
+I have used a 10-fold cross-validation strategy to get the CV scores for each model for comparision.
+
+In the end, I decided on the LightGBM model and got a score of 0.429 on Kaggle's leaderboard (*currently in the top 7%*).
 
 ----------------
 
