@@ -29,11 +29,11 @@ I do 4 important things over here -
 
 ### Modelling:
 
-I try Random Forest along with 2 gradient boosting machines - LightGBM and XGBoost.
+I try 2 gradient boosting machines - LightGBM and XGBoost - to model the data.
 
-I have used a 10-fold cross-validation strategy to get the CV scores for each model for comparision.
+I have used a 10-fold cross-validation strategy to get the CV scores of each model for comparision.
 
-In the end, I decided on the LightGBM model and got a score of 0.429 on Kaggle's leaderboard (*currently in the top 7%*).
+In the end, I decided on the LightGBM model and got an F1-macro score of 0.431 on the test data (*currently in the top 10% of Kaggle leaderboard*).
 
 ----------------
 
